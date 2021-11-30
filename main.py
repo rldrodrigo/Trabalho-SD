@@ -15,3 +15,4 @@ recset = cur.fetchall()
 for rec in recset:
     print(rec)
 con.close()
+    
