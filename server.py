@@ -27,8 +27,8 @@ def get_score_cpf(cpf, mes):
                 cpf+"' AND mes = '" + mes+"' ")
     recset = cur.fetchall()
     for rec in recset:
-        print(rec)
-        return "<h1>" + cpf + "</h1>" + "<h2>" + mes + "</h2>"
+        score = str(rec[2])
+        return score
 
     con.close()
 
