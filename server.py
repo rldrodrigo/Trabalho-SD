@@ -20,7 +20,7 @@ def get_score_cpf(cpf, mes):
     cur = con.cursor()
     #sql = 'create table usuarios (id serial primary key, cpf varchar(16), score INTEGER NOT NULL, mes varchar(3))'
     # cur.execute(sql)
-    #sql = "insert into usuarios values (default,'123.123.123-12', 70, 'AGO' )"
+    #sql = "insert into usuarios values (default,'12312312383', 70, 'AGO' )"
     # cur.execute(sql)
     con.commit()
     cur.execute("SELECT * from usuarios WHERE cpf = '" +
