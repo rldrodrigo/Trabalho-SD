@@ -13,7 +13,7 @@ def run():
         stub = VerificaScore_pb2_grpc.GreeterStub(channel)
         response = stub.SearchScore(
             VerificaScore_pb2.ScoreRequest(cpf='321', mes='AGO'))
-    print("Greeter client received: " + response.score)
+    print(response.score)
 
 
 if __name__ == '__main__':

@@ -25,7 +25,7 @@ class Greeter(VerificaScore_pb2_grpc.GreeterServicer):
         recset = cur.fetchall()
         for rec in recset:
             scoreRetorno = str(rec[2])
-            return VerificaScore_pb2.ScoreReply(score=scoreRetorno)
+            return VerificaScore_pb2.ScoreReply(score="O Score do CPF: " + request.cpf + " é de: "+scoreRetorno)
         con.close()
 
 
